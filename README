@@ -1,0 +1,87 @@
+Projeto Estacionamento
+Nome Projeto:  TaisLivr.ooo
+Responsáveis:
+Juan Castillo: PO
+Antonio Castillo: Scrum Master
+Juan Fontalvo: Dev 
+Antonio Fontalvo: Testes
+Necessidade do Cliente (Problema  a ser resolvido)
+Educar e apresentar às pessoas diversos livros de forma dinâmica, acessível e divertida.
+Objetivo do Projeto
+Uma aplicação web que GAME-MIFICAR reconhecer livros baseados diversos atributos
+Techos
+Escola literária
+Temáticas relevantes
+Gênero textual 
+Etc.
+Em primeira instância, um único modo de jogo com um conjunto de livros de diferentes gêneros, temas e autores. (Prioritariamente nacionais e alguns clássicos internacionais icônicos)
+ E um formulário optativo, estilo um captcha para NLP
+Definição do backlog: 
+Definição de Escopo
+O site será desenvolvido usando HTML, CSS, React e Java.
+O banco de dados ser utilizado será MySQL
+O site inclui uma página inicial, uma página de login, uma página mostrando o perfil, e uma página com o(s) jogo(s).
+O site inclui uma janela pop-off com um pequeno questionário.
+O site terá integração com o banco de dados para extrair a resposta e suas dicas a serem mostradas.
+O site terá integração com o banco de dados para armazenar as respostas e histórico de usuário.l (Não sei como funciona)
+O site terá integração com o banco de dados para armazenar as informações do formulário pop-off.
+O site deve ser incrementado (Adicionar outros modos de jogo ).
+O site terá meios de compartilhar os resultados.
+Exclusões do escopo:
+O desenvolvimento de aplicativos móveis não está incluído neste projeto.
+A personalização da aparência do site além do design padrão não está incluída neste projeto.
+Definição de Requisitos funcionais
+AUTH / LOGIN
+CRUD de usuário
+CRUD de Livro
+CRUD de respostas do formulário
+MOSTRAR BIBLIOTECA
+ESCOLHER E MOSTRAR INFORMAÇÕES DO TEXTO / LIVRO no jogo
+LIMITE DE TENTATIVAS
+DICAS CONSUMÍVEIS DIÁRIAS
+GANHAR DICAS 
+REGISTRAR PONTUAÇÃO
+Definição de Requisitos não funcionais
+Sistema 24/7
+Sprints a cada 2 semanas
+Entrega final dia 17/04
+ Preparo da área de trabalho
+Modelagem do banco de dados  
+Protótipo de baixa fidelidade]
+Implementar CRUD de Livros
+Implementar CRUD de usuarios
+Implementar CRUD de questionário
+Cadastro de ADM
+Implementar Painel administrativo
+Implementar campo e rotas de acerto e erro 
+Implementar mecanismo de tentativas
+Implementar controle de pontuação
+Implementar questionário pop-off
+Implementar compartilhamento de resultados 
+Implementar painel informativo do livro
+Implementar painel informativo da página
+Implementar painel informativo do jogo
+Integrar BD a aplicação
+Protótipo de alta fidelidade
+Período: 
+???
+Cronograma da Sprint (4 sprints de 2 semanas)
+Entrega 1: 17/02
+Entrega 2: 03/03
+Entrega 3: 17/03
+Entrega 4: 31/03
+Entrega 5: 14/04
+Sprints Backlog
+Sprint 1:	
+AAA
+Sprint 2:
+BBB
+Sprint 3: 
+CCC
+Sprint 4:
+DDD
+Sprint 5:
+EEE
+Sprint 6:
+FFF
+Link do Projeto no gitHub
