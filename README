@@ -74,15 +74,31 @@ Projeto Tais Livros
         Entrega 5: 14/04
     Sprints Backlog
         Sprint 1:	
-            AAA
+            Protótipo de baixa fidelidade
+            Modelagem de BD
+            Preparar ambiente de trabalho
+            Implementar CRUD´s
+            Cadastrar ADM
+            Review
         Sprint 2:
-            BBB
+            Popular base de dados 
+            Implementar painel informativo do livro
+            Implementar painel informativo da página
+            Implementar painel informativo do jogo
+            Integrar BD a aplicação
+            Protótipo de alta fidelidade
+            Testes
+            Review
         Sprint 3: 
-            CCC
+            Implementar campo e rotas de acerto e erro 
+            Implementar questionário pop-off
+            Implementar mecanismo de tentativas
+            Implementar controle de pontuação
+            Implementar compartilhamento de resultados 
+            Testes
+            Review
         Sprint 4:
-            DDD
-        Sprint 5:
-            EEE
-        Sprint 6:
-            FFF
+            Terminar de alimentar BD
+            Testes
+            Review
     Link do Projeto no gitHub
