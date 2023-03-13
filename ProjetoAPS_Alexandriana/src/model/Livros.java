@@ -1,47 +1,78 @@
 package model;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Date;
 
-public class Livros {
-	private int id_Livros;
+import controller.PostgreSQL_Alexandria;
 
-	private String Nome;
-	private String Genero;
-	private String Author;
-	private Date Data_pub;
+public class Livros {
 	
-	public int getId_Livros() {
-		return id_Livros;
+	// Atributos
+	private int idLivros;
+	private String nome;
+	private String genero;
+	private String author;
+	private Date dataPub;
+	
+	//	Construtor
+	public Livros(String nome, String genero, String author, Date dataPub) {
+		setNome(nome);
+		setGenero(genero);
+		setAuthor(author);
+		setDataPub(dataPub);
 	}
-	public void setId_Livros(int id_Livros) {
-		this.id_Livros = id_Livros;
+	
+	//	 Getters e Setters
+	public int getIdLivros() {
+		return idLivros;
+	}
+	public void setIdLivros(int id_Livros) {
+		this.idLivros = id_Livros;
 	}
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 	public String getGenero() {
-		return Genero;
+		return genero;
 	}
 	public void setGenero(String genero) {
-		Genero = genero;
+		this.genero = genero;
 	}
 	public String getAuthor() {
-		return Author;
+		return author;
 	}
 	public void setAuthor(String author) {
-		Author = author;
+		this.author = author;
 	}
-	public Date getData_pub() {
-		return Data_pub;
+	public Date getDataPub() {
+		return dataPub;
 	}
-	public void setData_pub(Date data_pub) {
-		Data_pub = data_pub;
+	public void setDataPub(Date dataPub) {
+		this.dataPub = dataPub;
 	}
-	//	Inserir livro na base de dado
+	
 	public void cadastrarLivro() {
 		
+		
+		PostgreSQL_Alexandria conectInst = new PostgreSQL_Alexandria();
+		
+		try {
+			Connection conn = conectInst.connect();
+			Statement lastLine = conn.createStatement();
+			ResultSet id = lastLine.executeQuery("SELECT MAX(\"ID\")FROM public.\"ALX_LIVROS\";");
+			setIdLivros(id.getInt(0));
+			Statement insertRow = conn.createStatement();
+			String statementText = String.format("INSERT INTO public.\"ALX_LIVROS\"(\"ID\", \"NOME\", \"GENERO\", \"AUTORIA\", \"DATA_PUBLI\")VALUES ('%i', '{%s}', '{%s}', '{%s}', '{%s}');", this.getIdLivros(), this.getNome(), this.getGenero(), this.getAuthor(), this.getDataPub());
+			insertRow.executeUpdate(statementText);
+			 
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }

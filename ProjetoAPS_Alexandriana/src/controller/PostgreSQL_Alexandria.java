@@ -3,12 +3,12 @@ package controller;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class PostgreSQL_Alexandria {
 	static final private String url = "jdbc:postgresql://localhost/Alexandria";
 	static final private String username = "postgres";
 	static final private String password = "00000000";
-	
 	
     public Connection connect() {
         Connection conn = null;
@@ -27,10 +27,4 @@ public class PostgreSQL_Alexandria {
 
         return conn;
     }
-	
-	public static void main(String[] args) {
-		PostgreSQL_Alexandria connect = new PostgreSQL_Alexandria();
-		connect.connect();
-	}
-
 }
