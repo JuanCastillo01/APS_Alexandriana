@@ -1,15 +1,36 @@
-package model;
+package alexandria.model.to.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ALX_SUMARIO")
 public class Sumario {
-	private int idSumario;
+	@Id
+	@GeneratedValue
+	@Column(name="ID")
+	private Long idSumario;
+	
+	@Column(name="SUM_A")
 	private String sumA;
+	
+	@Column(name="SUM_B")
 	private String sumB;
+	
+	@Column(name="SUM_C")
 	private String sumC;
+	
+	@Column(name="SUM")
 	private String sumTotal;
-	private int fkLivro;
+	
+	@Column(name="FK_LIVRO")
+	private Long idLivro;
 	
 	//Constructor
-	public Sumario(int id, String sumarioA,String sumarioB, String sumarioC, String sumarioTotal, int fkLivro) {
+	public Sumario(Long id, String sumarioA,String sumarioB, String sumarioC, String sumarioTotal, Long fkLivro) {
 		setIdSumario(id);
 		setSumA(sumarioA);
 		setSumB(sumarioB);
@@ -19,10 +40,10 @@ public class Sumario {
 	}
 	
 	//gettes e setters
-	public int getIdSumario() {
+	public Long getIdSumario() {
 		return idSumario;
 	}
-	public void setIdSumario(int idSumario) {
+	public void setIdSumario(Long idSumario) {
 		this.idSumario = idSumario;
 	}
 	public String getSumA() {
@@ -49,11 +70,11 @@ public class Sumario {
 	public void setSumTotal(String sumTotal) {
 		this.sumTotal = sumTotal;
 	}
-	public int getFkLivro() {
-		return fkLivro;
+	public Long getFkLivro() {
+		return idLivro;
 	}
-	public void setFkLivro(int fkLivro) {
-		this.fkLivro = fkLivro;
+	public void setFkLivro(Long fkLivro) {
+		this.idLivro = fkLivro;
 	}
 	
 }
