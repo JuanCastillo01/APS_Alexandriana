@@ -1,4 +1,4 @@
-package alexandria.model.to.entity;
+package alexandria.core.entity;
 
 import java.math.BigInteger;
 import java.util.Date;

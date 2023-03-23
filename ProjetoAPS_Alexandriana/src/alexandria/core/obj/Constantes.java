@@ -1,4 +1,4 @@
-package alexandria.model.obj;
+package alexandria.core.obj;
 
 public class Constantes {
 

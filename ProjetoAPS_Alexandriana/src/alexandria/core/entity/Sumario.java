@@ -1,4 +1,4 @@
-package alexandria.model.to.entity;
+package alexandria.core.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package alexandria.model.to.entity;
+package alexandria.core.entity;
 
 import java.util.Date;
 
@@ -10,12 +10,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="ALX_LIVROS")
-public class Livros {
+public class Livro {
 	
 	@Id
 	@GeneratedValue
 	@Column(name="ID")
-	private Long idLivros;
+	private Long sequencial;
 	
 	@Column(name="NOME")
 	private String nome;
@@ -29,20 +29,12 @@ public class Livros {
 	@Column(name="DATA_PUBLI")
 	private Date dataPub;
 	
-	//	Construtor
-	public Livros(String nome, String genero, String author, Date dataPub) {
-		setNome(nome);
-		setGenero(genero);
-		setAuthor(author);
-		setDataPub(dataPub);
-	}
-	
 	//	 Getters e Setters
-	public Long getIdLivros() {
-		return idLivros;
+	public Long getSequencial() {
+		return sequencial;
 	}
-	public void setIdLivros(Long idLivros) {
-		this.idLivros = idLivros;
+	public void setSequencial(Long idLivros) {
+		this.sequencial = idLivros;
 	}
 	public String getNome() {
 		return nome;
@@ -69,7 +61,5 @@ public class Livros {
 		this.dataPub = dataPub;
 	}
 	
-	public void cadastrarLivro() {
-   // TODO document why this method is empty
- }
+
 }
