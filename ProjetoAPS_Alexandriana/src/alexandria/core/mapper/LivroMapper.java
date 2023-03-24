@@ -2,8 +2,8 @@ package alexandria.core.mapper;
 
 import org.mapstruct.Mapper;
 
-import alexandria.controller.v0.api.request.LivroRequestTO;
-import alexandria.controller.v0.api.response.LivroResponseTO;
+import alexandria.api.v0.request.LivroRequestTO;
+import alexandria.api.v0.response.LivroResponseTO;
 import alexandria.core.entity.Livro;
 
 @Mapper

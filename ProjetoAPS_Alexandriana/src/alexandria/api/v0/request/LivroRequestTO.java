@@ -1,4 +1,4 @@
-package alexandria.controller.v0.api.request;
+package alexandria.api.v0.request;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package alexandria.controller.api.v0.contoller;
+package alexandria.api.v0.contoller;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import alexandria.controller.v0.api.request.LivroRequestTO;
-import alexandria.controller.v0.api.response.LivroResponseTO;
+import alexandria.api.v0.request.LivroRequestTO;
+import alexandria.api.v0.response.LivroResponseTO;
 import alexandria.core.mapper.LivroMapper;
 import alexandria.core.service.LivroService;
 
